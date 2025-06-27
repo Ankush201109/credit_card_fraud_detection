@@ -30,5 +30,5 @@ It includes a Flask API that can predict the cluster (normal or fraud/noise) for
 
 1️⃣ Clone the repo:
 ```bash
-git clone https://github.com/your-username/creditcardfrauddetector.git
-cd creditcardfrauddetector
+git clonehttps://github.com/Ankush201109/credit_card_fraud_detection
+
