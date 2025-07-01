@@ -1,3 +1,5 @@
+https://huggingface.co/spaces/Ankush02/credit_card_fraud_detector/tree/main
+
 # Credit Card Fraud Detection (DBSCAN + Flask API)
 
 This project is a machine learning solution for detecting fraudulent credit card transactions using **DBSCAN clustering algorithm**.  
