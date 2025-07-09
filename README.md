@@ -1,10 +1,15 @@
 🛡️ Credit Card Fraud Detector
+
+
 A lightweight web app for detecting fraudulent credit card transactions using a machine learning model.
 
 🔍 Project Overview
+
+
 This app allows users to input features of a credit card transaction and receive a prediction (Fraud or Not Fraud). Built with Python, Scikit-Learn, and Streamlit, it provides a user-friendly web interface for real-time fraud detection.
 
 🚀 Features
+
 Interactive Web UI: Easily input transaction data via a clean, organized form.
 
 ML-Powered Detection: Backed by a pre-trained model stored in credit_card_fraud_model.pkl.
@@ -14,9 +19,7 @@ Instant Feedback: Simulates real-time analysis with quick predictions.
 Deployable on Hugging Face Spaces: Get the model running as a hosted app with minimal setup.
 
 📁 Project Structure
-bash
-Copy
-Edit
+
 credit_card_fraud_detector/
 ├── app.py                      # Main Streamlit application
 ├── credit_card_fraud_model.pkl # Pre-trained fraud detection model
@@ -28,6 +31,7 @@ Python 3.7 or higher
 Familiarity with pip and virtual environments
 
 ⚙️ Installation & Run
+
 Clone the repo
 
 git clone https://huggingface.co/spaces/Ankush02/credit_card_fraud_detector
