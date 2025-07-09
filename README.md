@@ -1,9 +1,9 @@
-#🛡️ Credit Card Fraud Detector**
+#🛡️ Credit Card Fraud Detector
 
 
 A lightweight web app for detecting fraudulent credit card transactions using a machine learning model.
 
-#🔍 Project Overview**
+#🔍 Project Overview
 
 
 This app allows users to input features of a credit card transaction and receive a prediction (Fraud or Not Fraud). Built with Python, Scikit-Learn, and Streamlit, it provides a user-friendly web interface for real-time fraud detection.
