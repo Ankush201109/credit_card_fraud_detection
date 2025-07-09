@@ -1,36 +1,105 @@
-https://huggingface.co/spaces/Ankush02/credit_card_fraud_detector/tree/main
+🛡️ Credit Card Fraud Detector
+A lightweight web app for detecting fraudulent credit card transactions using a machine learning model.
 
-# Credit Card Fraud Detection (DBSCAN + Flask API)
+🔍 Project Overview
+This app allows users to input features of a credit card transaction and receive a prediction (Fraud or Not Fraud). Built with Python, Scikit-Learn, and Streamlit, it provides a user-friendly web interface for real-time fraud detection.
 
-This project is a machine learning solution for detecting fraudulent credit card transactions using **DBSCAN clustering algorithm**.  
-It includes a Flask API that can predict the cluster (normal or fraud/noise) for new transactions.
+🚀 Features
+Interactive Web UI: Easily input transaction data via a clean, organized form.
 
----
+ML-Powered Detection: Backed by a pre-trained model stored in credit_card_fraud_model.pkl.
 
-## 🚀 Features
+Instant Feedback: Simulates real-time analysis with quick predictions.
 
-✅ Unsupervised learning using DBSCAN  
-✅ Credit card transaction data preprocessing  
-✅ Flask REST API for predictions  
-✅ Ready for free deployment on Heroku  
-✅ Can be connected to web/mobile apps for real-time fraud detection  
+Deployable on Hugging Face Spaces: Get the model running as a hosted app with minimal setup.
 
----
+📁 Project Structure
+bash
+Copy
+Edit
+credit_card_fraud_detector/
+├── app.py                      # Main Streamlit application
+├── credit_card_fraud_model.pkl # Pre-trained fraud detection model
+├── requirements.txt           # Project dependencies
+└── README.md                  # Project overview and instructions
+🧰 Prerequisites
+Python 3.7 or higher
 
-## 🛠 Tech Stack
+Familiarity with pip and virtual environments
 
-- Python 3.x
-- scikit-learn (DBSCAN)
-- Flask
-- NumPy, Pandas
-- Gunicorn (for deployment)
-- Heroku (deployment platform)
+⚙️ Installation & Run
+Clone the repo
 
----
+git clone https://huggingface.co/spaces/Ankush02/credit_card_fraud_detector
+cd credit_card_fraud_detector
 
-## ⚙️ How to Run Locally
 
-1️⃣ Clone the repo:
-```bash
-git clone https://github.com/your-username/creditcardfrauddetector.git
-cd creditcardfrauddetector
+Install dependencies
+pip install -r requirements.txt
+
+
+Run the app locally
+streamlit run app.py
+
+
+Visit the app
+Open http://localhost:8501 in your browser to try out the fraud detector.
+
+🧠 How It Works (app.py)
+Load Model: Reads the credit_card_fraud_model.pkl file using pickle.
+
+User Input UI: Streamlit widgets collect numeric transaction features.
+
+Prediction Logic: Passes inputs to the model; displays “Fraud” or “Not Fraud”.
+
+Results Display: Shows prediction and confidence levels instantly.
+
+⚙️ Dependencies
+Listing for requirements.txt:
+
+streamlit
+
+pandas
+
+scikit-learn
+
+numpy
+
+(Exact versions in the repo.)
+
+🧬 Model Details
+Algorithm: Scikit-Learn classifier (e.g., Random Forest, XGBoost, or similar).
+
+Training Data: Commonly used credit card fraud datasets.
+
+Serialized Model File: credit_card_fraud_model.pkl.
+
+📌 Usage Example
+Start the app.
+
+Enter transaction feature values (e.g., V1, V2, Amount, etc.).
+
+Click Predict.
+
+View the fraud risk prediction immediately.
+
+📈 Deployment
+To host on Hugging Face Spaces:
+
+Ensure the repository includes app.py, requirements.txt, and model pickle.
+
+Connect your Space to this repo.
+
+Hugging Face will automatically install dependencies and launch the app.
+
+🤝 Contributing
+Fork this repo.
+
+Create a new branch: git checkout -b feature/your-feature.
+
+Add your contribution—new model, dataset improvements, UI enhancements.
+
+Submit a pull request.
+
+📄 License
+This project is open-source. Use it responsibly and feel free to adapt it for your own fraud detection tasks.
